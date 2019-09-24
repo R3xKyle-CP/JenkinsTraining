@@ -29,6 +29,7 @@ pipeline {
                 }
             }
             steps{
+               echo $GITBRANCH
                bat "node index.js -c $city"  
             }
         }
